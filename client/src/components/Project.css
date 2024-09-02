@@ -1,0 +1,97 @@
+.project{
+    width: 100%;
+    padding: 50px;
+}
+
+.p-cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.p-card{
+    width: 31%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.p-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: pink;
+}
+
+.p-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 270px; 
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0));
+    z-index: 1;
+}
+
+.card-text{
+    padding: 20px 15px;
+}
+
+.card-text p{
+    padding: 5px 0 10px;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.stars{
+    font-size: 1.1rem;
+    color: var(--yellow);
+}
+
+@media screen and (max-width:870px) {
+    .project{
+        padding: 0 50px;
+    }
+
+    .p-cards{
+        padding: 50px 0;
+    }
+
+    .p-card{
+        width: 49%;
+    }
+}
+
+@media screen and (max-width:650px){
+    .project{
+        padding: 30px 20px
+    }
+
+    .project h4{
+        padding-left: 20px;
+    }
+    
+    .project h2{
+        padding-left: 16px;
+    }
+
+    .p-card{
+        width: 100%;
+    }
+
+} 
+
+
